@@ -9,7 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    /* --background: #f7f7f7; */
+    --background: #fff;
     --foreground: #ededed;
   }
 }
@@ -18,10 +19,28 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  /* padding: 20px; */
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.button {
+  border: 0;
+  padding: 10px 25px;
+  border-radius: 18px;
+  font-weight: bold;
+  /* background-color: #171717; */
+  /* color: white; */
+}
+.button-white {
+  background-color: white;
+  color: #171717;
+}
+.button-secondary {
+  background-color: #f69800;
+  color: #fff;
 }
